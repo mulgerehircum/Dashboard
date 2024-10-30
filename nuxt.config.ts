@@ -16,7 +16,12 @@ export default defineNuxtConfig({
         xl3: "1600px",
       },
     },
+  },app: {
+    baseURL: '/Dashboard/'
+  },nitro: {
+    preset: 'github-pages'
   },
+  ssr: false,
   i18n: {
     defaultLocale: "en",
 
