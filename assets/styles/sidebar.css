@@ -1,0 +1,25 @@
+/* assets/css/sidebar.css */
+.btn-sidebar {
+    align-items: center;
+    display: flex;
+    justify-content: flex;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    --un-border-opacity: 1;
+    border-bottom-left-radius: 8px;
+    border-color: rgb(247 242 232 / var(--un-border-opacity));
+    border-top-left-radius: 8px;
+    --un-bg-opacity: 1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 14px 24px;
+    text-align: center;
+    --un-text-opacity: 1;
+    color: rgb(138 106 80 / var(--un-text-opacity));
+    transition-duration: .15s;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    width: 100%;
+}
