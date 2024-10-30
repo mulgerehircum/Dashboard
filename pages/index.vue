@@ -97,7 +97,7 @@ const handleCurrencySelect = (currency) => {
       </div>
     </div>
     <div v-else class="xl3:max-w-[1600px] xl2:max-w-[1000px] mx-auto w-full max-w-[957px]">
-      <div class="min-h-screen space-y-12 pt-16 lg:pt-0">
+      <div class="min-h-screen space-y-12 pt-16">
         <div class="flex flex-col items-start justify-start gap-6 px-5 lg:flex-row lg:justify-between lg:gap-2">
           <h1 class="text-xl lg:text-4xl font-bold text-primary-dark">{{ t('dashboard.title') }}</h1>
           <div class="flex flex-wrap">
