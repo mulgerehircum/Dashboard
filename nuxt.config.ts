@@ -16,10 +16,22 @@ export default defineNuxtConfig({
         xl3: "1600px",
       },
     },
-  },app: {
-    baseURL: '/Dashboard/'
-  },nitro: {
-    preset: 'github-pages'
+  },
+  app: {
+    head: {
+      viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+      htmlAttrs: {
+        lang: "en",
+      },
+      meta: [
+        { charset: "utf-8" },
+        { name: "format-detection", content: "telephone=no" },
+      ],
+    },
+    baseURL: "/Dashboard/",
+  },
+  nitro: {
+    preset: "github-pages",
   },
   ssr: false,
   i18n: {

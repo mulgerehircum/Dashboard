@@ -8,8 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "set NODE_OPTIONS=--max_old_space_size=8192 && set NITRO_PRESET=github-pages && nuxt generate && type nul > .output/public/.nojekyll && gh-pages -d .output/public"
-
+    "deploy": "cross-env NODE_OPTIONS=--max_old_space_size=8192 NITRO_PRESET=github-pages nuxt generate && type nul > .output/public/.nojekyll && gh-pages -d .output/public --dotfiles"
   },
   "dependencies": {
     "@vueuse/core": "^11.1.0",
@@ -26,6 +25,7 @@
     "@pinia/nuxt": "^0.6.0",
     "@unocss/nuxt": "^0.63.6",
     "@unocss/preset-icons": "^0.63.6",
+    "cross-env": "^7.0.3",
     "gh-pages": "^6.2.0",
     "unocss": "^0.63.6"
   }
